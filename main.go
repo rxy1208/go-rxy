@@ -24,6 +24,9 @@ func main() {
 	// 初始化gin实例
 	g := gin.New()
 
+	//初始化 DB
+	bootstrap.SetupDB()
+
 	// 初始化路由和全局中间件
 	bootstrap.SetupRoute(g)
 
